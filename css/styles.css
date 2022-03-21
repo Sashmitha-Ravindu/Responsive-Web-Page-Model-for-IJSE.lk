@@ -1,9 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 *{
     box-sizing: border-box;
     font-size: 1rem;
     font-family: 'Roboto', sans-serif;;
+}
+
+.clearfix{
+    clear: both;
 }
 
 header{
@@ -37,6 +44,10 @@ header nav.menu a{
     color: black;
 }
 
+header nav.menu div:nth-child(2) a:hover{
+    
+}
+
 .menu{
     float: left;
     height: 50px;
@@ -49,7 +60,7 @@ header nav.menu a{
     font-size: 1rem;
     padding-top: 20px;
     text-align: center;
-    
+    font-weight: 600;
 }
 
 
@@ -109,7 +120,170 @@ header nav.social-icons a:nth-child(7){
     
 }
 
-ion-icon{
+header nav.social-icons ion-icon{
     font-size: 25px;
+}
+
+.first-intro{
+    padding: 20px;
+}
+
+.first-intro p{
+    font-size: 1.1rem;
+    font-family: 'M PLUS 1', sans-serif;
+}
+
+main section h1{
+    font-size: 3rem;
+    font-family: 'M PLUS 1', sans-serif;
+}
+
+main section h3{
+    font-size: 1rem;
+    font-style: italic;
+    color: lightgray;
+}
+
+main section img{
+    float: right;
+    margin: 10px;
+    width: 350px;
+    border-radius: 10px;
+
+    
+}
+
+
+
+@media all and (max-width:1400px) {
+    header img{
+        width: 100px;
+        margin-top: 0px;
+        margin-right: 10px;
+        float: right;
+        right: 5px;
+        position: absolute;
+        padding-top: 10px;
+        
+    
+    }
+
+    header nav.social-icons {
+        position: absolute;
+        right: 160px;
+        align-self: center;
+        font-size: 1rem;
+        padding-bottom: 10px;
+        
+    }
+    
+    header nav.social-icons a{
+        margin: 4px;
+        
+    }
+
+    .menu{
+        float: left;
+        height: 50px;
+        display: flex;
+        
+    }
+    
+    header{
+        height: 75px;
+    }
+    
+    .menu-item{
+        height: 50px;
+        width: 50px;
+        font-size: 0.6rem;
+        padding: 0;
+        margin: 0%;
+        padding-top: 20px;
+        text-align: center;
+        
+        
+    }
+
+    .menu div:nth-child(1){
+        width: 45px;
+    }
+
+    .menu div:nth-child(2){
+        width: 85px;
+    }
+
+    main section img{
+        float: right;
+        margin: 20px;
+        width: 300px;
+        border-radius: 10px;
+    
+        
+    }
+}
+
+@media all and (max-width:798px){
+    header img{
+        width: 100px;
+        margin-top: 0px;
+        margin-right: 10px;
+        float: right;
+        right: 5px;
+        position: absolute;
+        padding-top: 10px;
+        top: 75px;
+    
+    }
+
+    header{
+        height: 150px;
+    }
+
+    header nav.social-icons {
+        position: absolute;
+        right: 160px;
+        align-self: center;
+        font-size: 1rem;
+        padding-bottom: 10px;
+        top: 75px;
+    }
+}
+
+@media all and (max-width:370px){
+    .menu-item{
+        height: 50px;
+        width: 40px;
+        font-size: 0.5rem;
+        padding: 0;
+        margin: 0%;
+        padding-top: 20px;
+        text-align: center;
+        font-weight: 600;
+    }
+
+    .menu div:nth-child(1){
+        width: 35px;
+    }
+
+    .menu div:nth-child(2){
+        width: 75px;
+    }
+
+    header nav.social-icons {
+        position: absolute;
+        right: 120px;
+        align-self: center;
+        font-size: 0.5rem;
+        padding-bottom: 10px;
+        top: 75px;
+    }
+
+    main section img{
+        float: right;
+        margin: 20px;
+        width: 200px;
+        border-radius: 10px;   
+    }
 }
 
